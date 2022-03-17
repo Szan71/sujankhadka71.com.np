@@ -37,6 +37,7 @@ function passCheck($event) {
             audio.play();
             homeScreen();
         } else {
+            window.navigator.vibrate(300);
             setTimeout(() => { alert('Wrong Password! Try again') }, 200);
         }
         pwd = [];
